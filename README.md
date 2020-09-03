@@ -1,12 +1,9 @@
-<p align="center">
-  <img width="128" align="center" src="lib/icons/logo.svg">
-</p>
 <h1 align="center">
   Prime
 </h1>
  
-<img src="1.png">
-<img src="2.png">
+<img width="500" align="center" src="1.PNG">
+<img width="500" align="center" src="2.PNG">
 
 ## Contributors
 * _[Programming]_  - [__Kristóf Kékesi__](https://github.com/KristofKekesi)
