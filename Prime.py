@@ -37,6 +37,6 @@ def resumeCalculating(numFile, file):
             print(colored(' SAFE TIME: 1 second  (WARNING)', "red"))
             time.sleep(1)
             print(colored(' SAFE TIME: NONE      (WAIT FOR NEXT TIME)', "red"))
-            print('\n|=========================================|')
+            print('|=========================================|')
         num += 1
 resumeCalculating('PrimeLastNum', 'PrimeNumbers.txt')
