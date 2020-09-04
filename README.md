@@ -1,9 +1,12 @@
 <h1 align="center">
   Prime
 </h1>
- 
-<img width="500" align="center" src="1.PNG">
-<img width="500" align="center" src="2.PNG">
+<h1 align="center">
+  <img width="500" align="center" src="1.PNG">
+</h1>
+<h1 align="center">
+  <img width="500" align="center" src="2.PNG">
+</h1>
 
 ## Contributors
 * _[Programming]_  - [__Kristóf Kékesi__](https://github.com/KristofKekesi)
