@@ -11,6 +11,9 @@
 ## This is...
 An app to calculate the prime numbers.
 
+## Our biggest calculated prime is... <img src="https://img.shields.io/badge/Last Edit-2020/09/05%20 16:43-red.svg" alt="">
+Our biggest calculated prime number is 5.542.967. __YET.__
+
 ## We are searching for..
 #### People to help us:
 - Run the program
