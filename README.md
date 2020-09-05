@@ -1,8 +1,5 @@
 <h1 align="center">
-  Prime
-</h1>
-<h1 align="center">
-  <img width="500" align="center" src="1.PNG">
+  Prime <img src="https://img.shields.io/badge/5.542.967-red.svg" alt="">
 </h1>
 <h1 align="center">
   <img width="500" align="center" src="2.PNG">
