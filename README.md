@@ -1,5 +1,5 @@
 <h1 align="center">
-  Prime <img src="https://img.shields.io/badge/5.542.967-red.svg" alt="">
+  Prime <img src="https://img.shields.io/badge/5.552.971-red.svg" alt="">
 </h1>
 <h1 align="center">
   <img width="500" align="center" src="2.PNG">
@@ -9,7 +9,7 @@
 An app to calculate the prime numbers.
 
 ## Our biggest calculated prime is... <img src="https://img.shields.io/badge/Last Edit-2020/09/05%20 16:43-red.svg" alt="">
-Our biggest calculated prime number is 5.542.967. __YET.__
+Our biggest calculated prime number is 5.552.971. __YET.__
 
 ## We are searching for..
 #### People to help us:
