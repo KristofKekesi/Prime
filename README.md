@@ -8,6 +8,15 @@
   <img width="500" align="center" src="2.PNG">
 </h1>
 
+## This is...
+An app to calculate the prime numbers.
+
+## We are searching for..
+People to help us:
+- Run the program
+- Improve the algorithm
+- Make it like Seti@Home
+
 ## Contributors
 * _[Programming]_  - [__Kristóf Kékesi__](https://github.com/KristofKekesi)
  
