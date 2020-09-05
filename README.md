@@ -6,7 +6,7 @@
 </h1>
 
 ## This is...
-An app to calculate the prime numbers.
+An app to calculate prime numbers.
 
 ## Our biggest calculated prime is... <img src="https://img.shields.io/badge/Last Edit-2020/09/06%20 01:32-red.svg" alt="">
 Our biggest calculated prime number is 5.657.999. __YET.__
