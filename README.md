@@ -12,7 +12,7 @@
 An app to calculate the prime numbers.
 
 ## We are searching for..
-People to help us:
+#### People to help us:
 - Run the program
 - Improve the algorithm
 - Make it like Seti@Home
