@@ -9,6 +9,7 @@ def resumeCalculating(numFile, file):
         if 'lastNum' in element:
             lastNum = element.strip().split(' = ')[1]
     num = int(lastNum) + 1
+
     write = open(file, 'a')
     while True:
         if num > 1:
@@ -25,6 +26,7 @@ def resumeCalculating(numFile, file):
             print('lastNum =', num, file=save)
             save.close()
         if (num % 1000) == 0:
+            write.close()
             print('\n|=========================================|')
             print(colored(' SAFE TIME: 5 seconds', "green"))
             time.sleep(1)
@@ -38,5 +40,6 @@ def resumeCalculating(numFile, file):
             time.sleep(1)
             print(colored(' SAFE TIME: NONE      (WAIT FOR NEXT TIME)', "red"))
             print('|=========================================|\n')
+            write = open(file, 'a')
         num += 1
 resumeCalculating('PrimeLastNum', 'PrimeNumbers.txt')
