@@ -8,7 +8,7 @@
 ## This is...
 An app to calculate prime numbers.
 
-## Our biggest calculated prime is... <img src="https://img.shields.io/badge/Last Edit-2020/09/07%20 18:27-red.svg" alt="">
+## Our biggest calculated prime is... <img src="https://img.shields.io/badge/Last Edit-2020/09/07%20 19:08-red.svg" alt="">
 Our biggest calculated prime number is 6.270.967. __YET.__
 
 ## We are searching for..
