@@ -18,6 +18,8 @@ Our biggest calculated prime number is 7.057.997. __YET.__
 - Make it like Seti@Home
 
 ## Contributors
+[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/0)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/0)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/1)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/1)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/2)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/2)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/3)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/3)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/4)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/4)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/5)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/5)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/6)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/6)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/7)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/7)
+
 * _[Programming]_  - [__Kristóf Kékesi__](https://github.com/KristofKekesi)
  
 ## Contacts [![Discord](https://img.shields.io/discord/639186082214445116.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/7URAMuc)
