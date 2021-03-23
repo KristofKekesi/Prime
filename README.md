@@ -11,12 +11,6 @@ An app to calculate prime numbers.
 ## Our biggest calculated prime is... <img src="https://img.shields.io/badge/Last Edit-2020/09/12%20 12:57-red.svg" alt="">
 Our biggest calculated prime number is 7.360.993. __YET.__
 
-## We are searching for..
-#### People to help us:
-- Run the program
-- Improve the algorithm
-- Make it like Seti@Home
-
 ## Contributors
 [![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/0)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/0)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/1)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/1)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/2)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/2)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/3)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/3)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/4)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/4)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/5)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/5)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/6)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/6)[![](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/images/7)](https://sourcerer.io/fame/KristofKekesi/KristofKekesi/Prime/links/7)
 
