@@ -1,0 +1,13 @@
+C:\Users\Kristóf\source\repos\prime\prime\bin\Debug\netcoreapp3.1\prime.exe
+C:\Users\Kristóf\source\repos\prime\prime\bin\Debug\netcoreapp3.1\prime.deps.json
+C:\Users\Kristóf\source\repos\prime\prime\bin\Debug\netcoreapp3.1\prime.runtimeconfig.json
+C:\Users\Kristóf\source\repos\prime\prime\bin\Debug\netcoreapp3.1\prime.runtimeconfig.dev.json
+C:\Users\Kristóf\source\repos\prime\prime\bin\Debug\netcoreapp3.1\prime.dll
+C:\Users\Kristóf\source\repos\prime\prime\bin\Debug\netcoreapp3.1\prime.pdb
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.csprojAssemblyReference.cache
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.AssemblyInfoInputs.cache
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.AssemblyInfo.cs
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.csproj.CoreCompileInputs.cache
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.dll
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.pdb
+C:\Users\Kristóf\source\repos\prime\prime\obj\Debug\netcoreapp3.1\prime.genruntimeconfig.cache
