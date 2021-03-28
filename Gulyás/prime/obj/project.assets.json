@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kristóf\\source\\repos\\prime\\prime\\prime.csproj",
+      "projectUniqueName": "F:\\Fájlok\\GitHub\\Prime\\Gulyás\\prime\\prime.csproj",
       "projectName": "prime",
-      "projectPath": "C:\\Users\\Kristóf\\source\\repos\\prime\\prime\\prime.csproj",
+      "projectPath": "F:\\Fájlok\\GitHub\\Prime\\Gulyás\\prime\\prime.csproj",
       "packagesPath": "C:\\Users\\Kristóf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kristóf\\source\\repos\\prime\\prime\\obj\\",
+      "outputPath": "F:\\Fájlok\\GitHub\\Prime\\Gulyás\\prime\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
