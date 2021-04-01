@@ -2,6 +2,9 @@
 using System.Diagnostics;
 using System.Linq;
 
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace prime
 {
     class Program
@@ -145,18 +148,7 @@ namespace prime
                         System.IO.File.WriteAllText("settings.json", forSaving);
                     }
 
-                    if (check % 100000 == 0)
-                    {
-                        Console.ReadLine();
-                    }
 
-                    if (check % 1000 == 0)
-                    {
-                        Console.WriteLine(check);
-                    }
-
-
-                        // future BUGFIX
                         // saving to API with Git Commit
                         if ((DateTime.UtcNow - sinceLastSave).TotalHours > 0.5) // in every 0.5 hours
                     {
@@ -170,6 +162,8 @@ namespace prime
 
                         currentProcess = Process.Start("git", "push");
                         currentProcess.WaitForExit();
+
+                        sinceLastSave = DateTime.UtcNow;
                     }
 
                 }
