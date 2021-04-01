@@ -1,0 +1,5 @@
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\publish\Gulyás.exe
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\publish\Gulyás.dll
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\publish\Gulyás.deps.json
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\publish\Gulyás.runtimeconfig.json
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\publish\Gulyás.pdb

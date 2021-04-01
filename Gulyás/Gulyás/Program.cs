@@ -15,6 +15,7 @@ namespace prime
             string forSaving;
 
 
+            // future REFACTOR
             // variable for the next number to check
             int check = 0;
 
@@ -96,7 +97,6 @@ namespace prime
                             fileName = "0-1000.json";
                         }
 
-                        Console.WriteLine(folderName + "\\" + fileName);
 
                         // making file
                         if (!System.IO.File.Exists(folderName + "\\" + fileName))
@@ -104,7 +104,7 @@ namespace prime
                             System.IO.File.WriteAllText(folderName + "\\" + fileName, "[\n]");
                         }
 
-
+                        // future REFACTOR
                         // prime to save with additional info
                         forSaving = "   {\"value\": " + check.ToString() + ", \"isPrime\": true}";
 
@@ -118,6 +118,7 @@ namespace prime
                     }
 
 
+                    // future REFACTOR
                     // saving settings
                     if (passed || check % 100 == 0)
                     {
@@ -153,6 +154,9 @@ namespace prime
                     {
                         Console.WriteLine(check);
                     }
+
+
+                        // future BUGFIX
                         // saving to API with Git Commit
                         if ((DateTime.UtcNow - sinceLastSave).TotalHours > 0.5) // in every 0.5 hours
                     {
