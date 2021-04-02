@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Kk3RakS2+JpM3bvTgL3hszIs0IjXwOM+tTGYHgFdtzFoRBG7r+nCCYuIeo/Yd2i2jW43TcDbCsVYtm46C8mulw==",
+  "dgSpecHash": "PNNvT8C1mINzzJRTp+jkEY4i0Hi+/dBh970t278JKQ+3iK4BTP30xaF69x0mABiMkAu0KIt01gTySqfAMYg9Mg==",
   "success": true,
   "projectFilePath": "F:\\Fájlok\\GitHub\\Prime\\Gulyás\\Gulyás\\Gulyás.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kristóf\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -11,3 +11,5 @@ F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Release\netcoreapp3.1\Gulyás.csproj
 F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Release\netcoreapp3.1\Gulyás.dll
 F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Release\netcoreapp3.1\Gulyás.pdb
 F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Release\netcoreapp3.1\Gulyás.genruntimeconfig.cache
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Release\netcoreapp3.1\Gulyás.csproj.CopyComplete

@@ -1,14 +1,22 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
-
-using System.Text.Json;
-using System.Text.Json.Serialization;
+using System.Text;
 
 namespace prime
 {
     class Program
     {
+        // LOG System
+        private void Log(string log)
+        {
+            string logFile = "log.txt";
+            Console.WriteLine(logFile + log);
+        }
+
         static void Main(string[] args)
         {
             // preset values
@@ -18,21 +26,13 @@ namespace prime
             string forSaving;
 
 
-            // future REFACTOR
             // variable for the next number to check
             int check = 0;
-
-            if (System.IO.File.Exists("settings.json"))
+            if (File.Exists("settings.json"))
             {
-                var settings = System.IO.File.ReadAllLines("settings.json").ToList();
-                for (int index = 0; index < settings.Count; index++)
-                {
-                    if (settings[index].Contains("lastChecked"))
-                    {
-                        check = int.Parse(settings[index].Split(":")[1].Replace(" ", "").Replace(",", ""));
-                        break;
-                    }
-                }
+                JObject settingsJson = JObject.Parse(File.ReadAllText("settings.json"));
+
+                check = (int)settingsJson.SelectToken("lastChecked");
             }
 
             // starting timer
@@ -74,9 +74,9 @@ namespace prime
                         
 
                         // making folder
-                        if (!System.IO.Directory.Exists(folderName))
+                        if (!Directory.Exists(folderName))
                         {
-                            System.IO.Directory.CreateDirectory(folderName);
+                            Directory.CreateDirectory(folderName);
                         }
 
 
@@ -102,9 +102,9 @@ namespace prime
 
 
                         // making file
-                        if (!System.IO.File.Exists(folderName + "\\" + fileName))
+                        if (!File.Exists(folderName + "\\" + fileName))
                         {
-                            System.IO.File.WriteAllText(folderName + "\\" + fileName, "[\n]");
+                            File.WriteAllText(folderName + "\\" + fileName, "[\n]");
                         }
 
                         // future REFACTOR
@@ -113,9 +113,9 @@ namespace prime
 
 
                         // saving file to the local API
-                        var txtLines = System.IO.File.ReadAllLines(folderName + "\\" + fileName).ToList();
+                        var txtLines = File.ReadAllLines(folderName + "\\" + fileName).ToList();
                         txtLines.Insert(txtLines.Count - 1, forSaving);
-                        System.IO.File.WriteAllLines(folderName + "\\" + fileName, txtLines);
+                        File.WriteAllLines(folderName + "\\" + fileName, txtLines);
 
                         lastPrime = check;
                     }
@@ -126,30 +126,41 @@ namespace prime
                     if (passed || check % 100 == 0)
                     {
                         // making file for settings
-                        if (!System.IO.File.Exists("settings.json"))
+                        if (!File.Exists("settings.json"))
                         {
-                            System.IO.File.WriteAllText("settings.json", "");
+                            File.WriteAllText("settings.json", "");
                         }
 
 
                         // settings
-                        forSaving = "[\n    \"lastChecked\": " + check.ToString() + ",\n    \"lastPrime\": " + lastPrime.ToString() + "\n]";
-
-
-                        // read settings
-                        if (System.IO.File.Exists(".exit"))
+                        StringBuilder final = new StringBuilder();
+                        using (JsonWriter writer = new JsonTextWriter(new StringWriter(final)))
                         {
-                            System.IO.File.Delete(".exit");
-                            break;
+                            writer.Formatting = Formatting.Indented;
+
+                            writer.WriteStartObject();
+                            writer.WritePropertyName("lastChecked");
+                            writer.WriteValue(check.ToString());
+                            writer.WritePropertyName("lastPrime");
+                            writer.WriteValue(lastPrime.ToString());
+                            writer.WriteEndObject();
                         }
 
 
                         // saving data to the settings
-                        System.IO.File.WriteAllText("settings.json", forSaving);
+                        File.WriteAllText("settings.json", final.ToString());
+
+
+                        // read settings
+                        if (File.Exists(".exit"))
+                        {
+                            File.Delete(".exit");
+                            break;
+                        }
                     }
 
 
-                        // saving to API with Git Commit
+                        // saving to APIs with Git Commit
                         if ((DateTime.UtcNow - sinceLastSave).TotalHours > 0.5) // in every 0.5 hours
                     {
                         Process currentProcess;
@@ -157,7 +168,7 @@ namespace prime
                         currentProcess = Process.Start("git", "add --all");
                         currentProcess.WaitForExit();
 
-                        currentProcess = Process.Start("git", "commit -m \"up to " + folderName + "\\" + fileName + "000\"");
+                        currentProcess = Process.Start("git", "commit -m \"max: " + folderName + "\\" + fileName + "\"");
                         currentProcess.WaitForExit();
 
                         currentProcess = Process.Start("git", "push");
