@@ -11,14 +11,26 @@ namespace prime
     class Program
     {
         // LOG System
-        private void Log(string log)
+        public static void Log(string message)
         {
             string logFile = "log.txt";
-            Console.WriteLine(logFile + log);
+            string broadcast = "[" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "] " + message;
+
+            if (File.Exists("log.txt"))
+            {
+                File.AppendAllText(logFile, Environment.NewLine + broadcast);
+            } else
+            {
+                File.WriteAllText(logFile, broadcast);
+            }
+
+            Console.WriteLine(broadcast);
         }
 
         static void Main(string[] args)
         {
+            Log("app lauched (Gulyás v1.1)");
+
             // preset values
             int lastPrime = 0;
             string folderName = "";
@@ -33,10 +45,11 @@ namespace prime
                 JObject settingsJson = JObject.Parse(File.ReadAllText("settings.json"));
 
                 check = (int)settingsJson.SelectToken("lastChecked");
+                Log("data loaded from settings.json");
             }
 
             // starting timer
-            DateTime sinceLastSave = DateTime.UtcNow;
+            DateTime sinceLastSave = DateTime.Now;
 
 
             // main loop 
@@ -77,6 +90,7 @@ namespace prime
                         if (!Directory.Exists(folderName))
                         {
                             Directory.CreateDirectory(folderName);
+                            Log("created \"" + folderName + "\" directory");
                         }
 
 
@@ -105,6 +119,7 @@ namespace prime
                         if (!File.Exists(folderName + "\\" + fileName))
                         {
                             File.WriteAllText(folderName + "\\" + fileName, "[\n]");
+                            Log("created \"" + fileName + "\" file");
                         }
 
                         // future REFACTOR
@@ -115,7 +130,10 @@ namespace prime
                         // saving file to the local API
                         var txtLines = File.ReadAllLines(folderName + "\\" + fileName).ToList();
                         txtLines.Insert(txtLines.Count - 1, forSaving);
+
+                        Log("opening \"" + folderName + "\\" + fileName + "\"");
                         File.WriteAllLines(folderName + "\\" + fileName, txtLines);
+                        Log("\"" + folderName + "\\" + fileName + "\" closed");
 
                         lastPrime = check;
                     }
@@ -129,6 +147,7 @@ namespace prime
                         if (!File.Exists("settings.json"))
                         {
                             File.WriteAllText("settings.json", "");
+                            Log("created \"settings.json\"");
                         }
 
 
@@ -148,31 +167,42 @@ namespace prime
 
 
                         // saving data to the settings
+                        Log("opening \"settings.json\"");
                         File.WriteAllText("settings.json", final.ToString());
+                        Log("\"settings.json\" closed");
 
 
                         // read settings
                         if (File.Exists(".exit"))
                         {
+                            Log("deleting \".exit\"");
                             File.Delete(".exit");
+                            Log("\".exit\" deleted");
                             break;
                         }
                     }
 
 
                         // saving to APIs with Git Commit
-                        if ((DateTime.UtcNow - sinceLastSave).TotalHours > 0.5) // in every 0.5 hours
+                        if ((DateTime.Now - sinceLastSave).TotalHours > 0.5) // in every 0.5 hours
                     {
                         Process currentProcess;
-                        
+
+                        Log("saving to APIs");
+                        Log("started process 1/3");
                         currentProcess = Process.Start("git", "add --all");
                         currentProcess.WaitForExit();
+                        Log("process 1/3 finished");
 
+                        Log("started process 2/3");
                         currentProcess = Process.Start("git", "commit -m \"max: " + folderName + "\\" + fileName + "\"");
                         currentProcess.WaitForExit();
+                        Log("process 2/3 finished");
 
+                        Log("started process 3/3");
                         currentProcess = Process.Start("git", "push");
                         currentProcess.WaitForExit();
+                        Log("process 3/3 finished");
 
                         sinceLastSave = DateTime.UtcNow;
                     }
