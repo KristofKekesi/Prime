@@ -44,7 +44,7 @@ namespace prime
             {
                 JObject settingsJson = JObject.Parse(File.ReadAllText("settings.json"));
 
-                check = (int)settingsJson.SelectToken("lastChecked");
+                check = (int)settingsJson.SelectToken("lastChecked") + 1;
                 Log("data loaded from settings.json");
             }
 
@@ -129,6 +129,7 @@ namespace prime
 
                         // saving file to the local API
                         var txtLines = File.ReadAllLines(folderName + "\\" + fileName).ToList();
+                        txtLines[txtLines.Count - 2] = txtLines[txtLines.Count - 2] + ",";
                         txtLines.Insert(txtLines.Count - 1, forSaving);
 
                         Log("opening \"" + folderName + "\\" + fileName + "\"");

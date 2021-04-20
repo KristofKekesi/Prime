@@ -1,0 +1,15 @@
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Gulyás.exe
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Gulyás.deps.json
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Gulyás.runtimeconfig.json
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Gulyás.runtimeconfig.dev.json
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Gulyás.dll
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Gulyás.pdb
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.csprojAssemblyReference.cache
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.AssemblyInfoInputs.cache
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.AssemblyInfo.cs
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.csproj.CoreCompileInputs.cache
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.csproj.CopyComplete
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.dll
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.pdb
+F:\Fájlok\GitHub\Prime\Gulyás\Gulyás\obj\Debug\netcoreapp3.1\Gulyás.genruntimeconfig.cache
