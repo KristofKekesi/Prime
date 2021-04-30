@@ -129,7 +129,7 @@ namespace prime
 
                         // saving file to the local API
                         var txtLines = File.ReadAllLines(folderName + "\\" + fileName).ToList();
-                        txtLines[txtLines.Count - 2] = txtLines[txtLines.Count - 2] + ",";
+                        if (txtLines[txtLines.Count - 2] != "[") { txtLines[txtLines.Count - 2] = txtLines[txtLines.Count - 2] + ","; }
                         txtLines.Insert(txtLines.Count - 1, forSaving);
 
                         Log("opening \"" + folderName + "\\" + fileName + "\"");
